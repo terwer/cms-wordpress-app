@@ -1,6 +1,8 @@
-# A statically generated blog example using Next.js and WordPress
+# A statically generated blog using Next.js and WordPress
 
-This example showcases Next.js's [Static Generation](https://nextjs.org/docs/basic-features/pages) feature using [WordPress](https://wordpress.org) as the data source.
+This project showcases Next.js's [Static Generation](https://nextjs.org/docs/basic-features/pages) feature using [WordPress](https://wordpress.org) as the data source.
+
+Both support `wpgraphhql` and wordpress xmlrpc `metaweblogApi`.
 
 ## Demo
 
@@ -69,6 +71,10 @@ The [WPGraphQL](https://www.wpgraphql.com/) plugin also gives you access to a Gr
 
 ![WPGraphiQL page](./docs/wp-graphiql.png)
 
+#### xmlrpc
+
+Note, xmlrpc is bundled with wordpress.No need todo anything.The end point maybe `https://xxx.com/xmlrpc.php`.
+
 ### Step 2. Populate Content
 
 Inside your WordPress admin, go to **Posts** and start adding new posts:
@@ -98,7 +104,14 @@ Then open `.env.local` and set `WORDPRESS_API_URL` to be the URL to your GraphQL
 Your `.env.local` file should look like this:
 
 ```bash
-WORDPRESS_API_URL=...
+WORDPRESS_GRAPHHQL_API_URL=...
+WORDPRESS_XMLRPC_API_URL=..
+
+# use graphhql
+# WORDPRESS_API_URL=$WORDPRESS_GRAPHHQL_API_URL
+
+# use xmlrpc
+WORDPRESS_API_URL=$WORDPRESS_XMLRPC_API_URL
 
 # Only required if you want to enable preview mode
 # WORDPRESS_AUTH_REFRESH_TOKEN=
@@ -110,11 +123,12 @@ WORDPRESS_API_URL=...
 ```bash
 npm install
 npm run dev
-
+npm install metaweblog-api --save
 # or
 
 yarn install
 yarn dev
+yarn add metaweblog-api -S
 ```
 
 Your blog should be up and running on [http://localhost:3000](http://localhost:3000)! If it doesn't work, post on [GitHub discussions](https://github.com/vercel/next.js/discussions).
