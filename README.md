@@ -4,33 +4,15 @@ This project showcases Next.js's [Static Generation](https://nextjs.org/docs/bas
 
 Both support `wpgraphhql` and wordpress xmlrpc `metaweblogApi`.
 
-## Demo
+## Blog
 
-### [https://next-blog-wordpress.vercel.app](https://next-blog-wordpress.vercel.app)
+### [https://terwer-blog-wordpress.vercel.app](https://terwer-blog-wordpress.vercel.app)
 
 ## Deploy your own
 
-Once you have access to [the environment variables you'll need](#step-3-set-up-environment-variables), deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example):
+Once you have access to [the environment variables you'll need](#step-3-set-up-environment-variables), deploy the blog using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example):
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/cms-wordpress&project-name=cms-wordpress&repository-name=cms-wordpress&env=WORDPRESS_API_URL&envDescription=Required%20to%20connect%20the%20app%20with%20WordPress&envLink=https://vercel.link/cms-wordpress-env)
-
-### Related examples
-
-- [DatoCMS](/examples/cms-datocms)
-- [Sanity](/examples/cms-sanity)
-- [TakeShape](/examples/cms-takeshape)
-- [Prismic](/examples/cms-prismic)
-- [Contentful](/examples/cms-contentful)
-- [Strapi](/examples/cms-strapi)
-- [Agility CMS](/examples/cms-agilitycms)
-- [Cosmic](/examples/cms-cosmic)
-- [ButterCMS](/examples/cms-buttercms)
-- [Storyblok](/examples/cms-storyblok)
-- [GraphCMS](/examples/cms-graphcms)
-- [Kontent](/examples/cms-kontent)
-- [Ghost](/examples/cms-ghost)
-- [Blog Starter](/examples/blog-starter)
-- [Builder.io](/examples/cms-builder-io)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/terwer/cms-wordpress-app&project-name=cms-wordpress&repository-name=cms-wordpress&env=WORDPRESS_API_URL&envDescription=Required%20to%20connect%20the%20app%20with%20WordPress&envLink=https://vercel.link/cms-wordpress-env)
 
 ## How to use
 
