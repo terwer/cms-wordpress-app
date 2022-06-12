@@ -86,14 +86,18 @@ Then open `.env.local` and set `WORDPRESS_API_URL` to be the URL to your GraphQL
 Your `.env.local` file should look like this:
 
 ```bash
-WORDPRESS_GRAPHHQL_API_URL=...
-WORDPRESS_XMLRPC_API_URL=..
+# WORDPRESS_GRAPHHQL_API_URL=
+WORDPRESS_XMLRPC_API_URL=
 
 # use graphhql
 # WORDPRESS_API_URL=$WORDPRESS_GRAPHHQL_API_URL
 
 # use xmlrpc
 WORDPRESS_API_URL=$WORDPRESS_XMLRPC_API_URL
+
+# SECRET
+WORDPRESS_USERNAME=
+WORDPRESS_PASSWORD=
 
 # Only required if you want to enable preview mode
 # WORDPRESS_AUTH_REFRESH_TOKEN=
