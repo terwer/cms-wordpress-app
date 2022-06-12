@@ -14,15 +14,21 @@ export default function Index({blogInfo}) {
       </Head>
       <Container>
         <h1>Hello World!</h1>
-        <p>This is blog info:{blogInfo}</p>
+        <p>This is blog info:
+            <a href={blogInfo.url}
+              target="_blank"
+            >
+              {blogInfo.blogName}
+            </a>
+        </p>
       </Container>
     </Layout>
   )
 }
 
-export async function getBlogInfo() {
-    console.log("getBlogInfo=>")
+export async function getStaticProps() {
     const blogInfo = await getUsersBlogs()
+    // console.log("getBlogInfo=>", blogInfo)
 
     return {
         props: { blogInfo },
