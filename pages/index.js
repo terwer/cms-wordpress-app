@@ -10,15 +10,15 @@ export default function Index({blogInfo}) {
   return (
     <Layout>
       <Head>
-        <title>Next.js Blog with {CMS_NAME}</title>
+        <title>{CMS_NAME}</title>
       </Head>
       <Container>
         <h1>Hello World!</h1>
         <p>This is blog info:
-            <a href={blogInfo.url}
+            <a href={blogInfo.url || "undfined"}
               target="_blank"
             >
-              {blogInfo.blogName}
+              {blogInfo.blogName || "undfined"}
             </a>
         </p>
       </Container>
