@@ -12,7 +12,8 @@
     "metaweblog-api": "^1.2.0",
     "next": "latest",
     "react": "^18.1.0",
-    "react-dom": "^18.1.0"
+    "react-dom": "^18.1.0",
+    "wordpress": "^1.4.1"
   },
   "devDependencies": {
     "autoprefixer": "10.4.7",
